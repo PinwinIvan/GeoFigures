@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Geometric Calculator</title>
+</head>
+<body>
+    <header><h1>Geometric Figures</h1></header>
+    <div class="calcContainer">
+        <div class="calcSquare">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Black_Square_2.png" alt="Square">
+            <section>
+                <form>
+                    <h2>Area and perimeter of a square</h2>
+                    <div>
+                        <label for="squareInput">Length of one side:</label>
+                        <input id="squareInput" type="number">
+                    </div>
+                    <p id="sqrPerimeter"></p>
+                    <p id="sqrArea"></p>
+                        <div>
+                            <button type="button" onclick="sqrPerimeterCalculate()">Perimeter</button>
+                            <button type="button" onclick="sqrAreaCalculate()">Area</button>
+                            <button type="button" onclick="clearTextSquare()">Clear</button>
+                        </div>
+                </form>
+            </section>
+        </div>
+
+
+        <div class="calcCircle">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Black_Circle.jpg" alt="Cricle">
+            <section>
+                <form>
+                    <h2>Area and circunference of a circle</h2>
+                    <div>
+                        <label for="circleInput">Lenght of the radius:</label>
+
+                        <input id="circleInput" type="number">
+                    </div>
+                    <p id="circleCircunfer"></p>
+                    <p id="circleArea"></p>
+                        <div>
+                            <button type="button" onclick="circleCircunferCalculate()">Circunference</button>
+                            <button type="button"onclick="circleAreaCalculate()">Area</button>
+                            <button type="button" onclick="clearTextCirlce()">Clear</button>
+                        </div>
+                </form>
+            </section>
+        </div>
+
+
+        <div class="calcTriangles">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Black_triangle_with_thick_white_border.svg" alt="Triangle" >
+            <section>
+                <h2>Area and perimeter of a triangle</h2>
+
+                <form class="calcTriangle">
+                    <div>
+                        <label for="triangleInputBase">Base</label>
+                        <input id="triangleInputBase" type="number">
+                    </div>
+                    <div>
+                        <label for="triangleInputSideA">Side A</label>
+                        <input id="triangleInputSideA" type="number">
+                    </div>
+                    <div>
+                        <label for="triangleInputSideB">Side B</label>
+                        <input id="triangleInputSideB" type="number">                        
+                    </div>
+                    <div>    
+                        <label for="triangleInputHeight">Height</label>
+                        <input id="triangleInputHeight" type="number">
+                    </div>
+                
+                    <p id="trianglePerimeter"></p>
+                    <p id="triangleArea"></p>
+                
+                        <div class="triangleButtons">
+                            <button type="button" onclick="trianglePerimeterCalculate()">Perimeter</button>
+                            <button type="button" onclick="triangleAreaCalculate()">Area</button>
+                            <button type="button" onclick="clearTextTriangle()">Clear</button>
+                        </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+
+<script src="js/script.js"></script>    
+</body>
+
+</html>
